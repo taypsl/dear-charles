@@ -8,7 +8,11 @@ $(document).ready(function() {
       }
       if ($(this).scrollTop() > 110) {
       	 $('body').removeClass('sunrise');
-         $('body').addClass('sunrise');
+         $('body').addClass('sunrise');         
+         // $('.dark').addClass('light-earth');
+         // $('.dark').removeClass('dark-earth');
+         $('.dark').addClass('fadeout');
+
          setTimeout(function() { 
          	$('path').css({'animation': 'dashScroll 7s linear forwards'}); 
          }, 3000);
@@ -21,6 +25,8 @@ $(document).ready(function() {
       if ($(this).scrollTop() < 100) {
       	 $('body').removeClass('twilight');
          $('body').removeClass('sunrise');
+         // $('.dark').removeClass('light-earth');
+         // $('.dark').addClass('dark-earth');
       }
    });
 
