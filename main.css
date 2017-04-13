@@ -265,18 +265,64 @@ div#groupB div{
 .svg-container {
 	position: fixed;
 	width: 100%;
-	z-index: 100;
+	z-index: 10;
 }
 
 path {
 	width: 100%;
 	fill: none;
 	stroke: #ffc364;
-	stroke-width: 5px;
-	stroke-dasharray: 20;
+	stroke-width: 4px;
+	stroke-dasharray: 1000;
+  	stroke-dashoffset: 1000;
+}
+
+@keyframes dashScroll {
+  to {
+    stroke-dashoffset: 0;
+  }
 }
 
 
+/* YOUVE GOT MAIL (ugh rly mixing cinema classics down here) */
+.mail {
+	width: 100%;
+	cursor: pointer;
+	z-index: -10;
+}
+
+.fa {
+	color: #ffffff;
+	position: fixed;
+	right: 15%;
+	bottom: 30%;
+}
+
+/* note */
+.note {
+	position: fixed;
+	padding-top: 10%;
+	padding-left: 15%;
+	padding-right: 15%;
+	right: 0;
+	width: auto;
+	height: 100vh;
+	background-color: #0f151e;
+	color: #ffc364;
+	font-family: 'Ubuntu Mono', monospace;
+	font-weight: 400;
+	opacity: .8;
+	z-index: 10000;
+}
+
+.title {
+	font-weight: 700: 
+}
+
+.signature {
+	font-weight: 700;
+	font-size: 1em;
+}
 
 /* colors */
 .twilight {
