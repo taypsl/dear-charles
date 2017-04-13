@@ -263,8 +263,9 @@ div#groupB div{
 }
 
 .svg-container {
-	position: absolute;
-	float: right;
+	position: fixed;
+	width: 100%;
+	z-index: 100;
 }
 
 path {
@@ -273,7 +274,6 @@ path {
 	stroke: #ffc364;
 	stroke-width: 5px;
 	stroke-dasharray: 20;
-	z-index: 100;
 }
 
 
