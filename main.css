@@ -1,0 +1,147 @@
+html {
+	background-color: #000000;
+}
+
+.hidden {
+	display: none;
+}
+
+/* stars */
+.stars {
+	background-color: #ffffff;
+	width: 9px;
+	height: 9px;
+	-moz-border-radius: 50px;
+	-webkit-border-radius: 50px;
+	border-radius: 50px;
+}
+
+.starOne {
+	width: 12px;
+	height: 12px;
+	position: fixed;
+	left: 55%;
+	top: 8%;
+}
+
+.starTwo {
+	width: 12px;
+	height: 12px;
+	position: fixed;
+	left: 18%;
+	top: 16%;
+}
+
+.starThree {
+	width: 10px;
+	height: 10px;
+	position: fixed;
+	left: 70%;
+	top: 32%;
+}
+
+.starFour {
+	width: 10px;
+	height: 10px;
+	position: fixed;
+	left: 8%;
+	top: 8%;
+}
+
+.starFive {
+	position: fixed;
+	left: 60%;
+	top: 30%;
+}
+
+.starSix {
+	position: fixed;
+	left: 85%;
+	top: 15%;
+}
+
+.starSeven {
+	position: fixed;
+	left: 30%;
+	top: 35%;
+}
+
+/* Keyframes for the stars */
+@-webkit-keyframes starsAppear { 
+	from { opacity: 0;} 
+	to { opacity:1; } 
+}
+
+@-moz-keyframes starsAppear {
+	from { opacity: 0; } 
+	to { opacity: 1; } 
+}
+
+@keyframes starsAppear {
+	from { opacity:0; } 
+	to { opacity:1; } 
+}
+
+
+.stars {
+  opacity:0;
+  opacity: 1 \9; /*just in case ie*/
+  -webkit-animation: starsAppear ease-in 1;
+  -moz-animation: starsAppear ease-in 1;
+  animation: starsAppear ease-in 1;
+
+  -webkit-animation-fill-mode:forwards;
+  -moz-animation-fill-mode:forwards;
+  animation-fill-mode:forwards;
+
+  -webkit-animation-duration:1s;
+  -moz-animation-duration:1s;
+  animation-duration:1s;
+}
+
+.stars.starOne {
+  -webkit-animation-delay: 1.0s;
+  -moz-animation-delay: 1.0s;
+  animation-delay: 1.0s;
+}
+
+.stars.starTwo {
+  -webkit-animation-delay: 2.3s;
+  -moz-animation-delay: 2.3s;
+  animation-delay: 2.3s;
+}
+
+.stars.starThree {
+  -webkit-animation-delay: 3.0s;
+  -moz-animation-delay: 3.0s;
+  animation-delay: 3.0s;
+}
+
+.stars.starFour {
+  -webkit-animation-delay: 3.8s;
+  -moz-animation-delay: 3.8s;
+  animation-delay: 3.8s;
+}
+
+.stars.starFive {
+  -webkit-animation-delay: 4.5s;
+  -moz-animation-delay: 4.5s;
+  animation-delay: 4.5s;
+}
+
+.stars.starSix {
+  -webkit-animation-delay: 5.2s;
+  -moz-animation-delay: 5.2s;
+  animation-delay: 5.2s;
+}
+
+.stars.starSeven {
+  -webkit-animation-delay: 6.0s;
+  -moz-animation-delay: 6.0s;
+  animation-delay: 6.0s;
+}
+
+
+
+
+
