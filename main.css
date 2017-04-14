@@ -21,9 +21,6 @@ body {
 	height: 100vh;
 }
 
-.hidden {
-	display: none;
-}
 
 iframe#player {
 	position: fixed;
@@ -244,7 +241,6 @@ div#groupB div{
 
 /* earth shadow */
 .earth {
-	/*	background: url(images/earth@2x.png)  no-repeat; */
 	position: fixed;
 	right: 0;
 	bottom: 0;
@@ -536,3 +532,6 @@ div#plane {
 
 
 
+.hidden {
+	display: none;
+}
