@@ -9,6 +9,12 @@ body {
 	height: 115vh;
 }
 
+a {
+	color: #ffc364;
+}
+
+
+/*background stuff */
 .space {
 	position: fixed;
 	left: 0;
