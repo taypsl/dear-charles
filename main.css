@@ -27,14 +27,18 @@ iframe#player {
 	z-index: -1000;
 	bottom: 0;
 	right: 0;
+	height: 0;
 }
 
 .player {
-	height: 0;
+	height: 200px;
+	width: 200px;
+	background-color: black;
 	padding-bottom: 1%;
 	display: inline;
 	-webkit-overflow-scrolling: touch;
 	overflow: auto;
+	z-index: -1000;
 }
 
 
