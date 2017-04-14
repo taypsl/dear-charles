@@ -1,1 +1,3 @@
-# Dear Charles, a letter for missed connections. 
+# Dear Charles, 
+
+A letter for missed connections. 
