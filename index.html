@@ -4,7 +4,7 @@
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width" />
 	<meta name="description" content="A letter, from Berkeley." />
-	<title>Dear The Charles</title>
+	<title>Dear The Charles NYC</title>
 	<link rel="stylesheet" href="main.css" />
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 	<link href="https://fonts.googleapis.com/css?family=Ubuntu+Mono:400,700" rel="stylesheet">
@@ -38,41 +38,56 @@
 		</div>
 	</div>
 
-
 	<div class="earth">
 		<div class="us">
-			<img src="images/us@2x-03.png" class="contain"/>
-		</div>
-		<div class="svg-container">
-			<svg id="svg" width="100%" height="100vh" viewBox="-75 250 700 200" >
-<!-- 			preserveAspectRatio="xMinYMax meet"
- -->				<path d="M62,224 C171,163 339,152 475,205"></path>
-			</svg>
+			<img src="images/us-layer-04-04.png" class="contain"/>
 		</div>
 	</div>
-	
+
+<!-- in case I change my mind about the svg path... 
+	<div class="dash-container">
+			<div class="dash" id="dashOne"></div>
+			<div class="dash" id="dashTwo"></div>
+			<div class="dash" id="dashThree"></div>
+			<div class="dash" id="dashFour"></div>
+			<div class="dash" id="dashFive"></div>
+			<div class="dash" id="dashSix"></div>
+			<div class="dash" id="dashSeven"></div>
+			<div class="dash" id="dashEight"></div>
+			<div class="dash" id="dashNine"></div>
+			<div class="dash" id="dashTen"></div>
+			<div class="dash" id="dashEleven"></div>
+	</div> -->
+
+	<div id="flight-path">
+        <svg viewBox="0 0 624 226" preserveAspectRatio="xMinYMin slice">
+            <path d="M60,223 C155,98 357,84 475,205" id="plane-path"></path>
+        </svg>   
+    </div>
+
 	<div class="dark"></div>
 
-	<div class="open mail hidden"><i class="fa fa-envelope fa-5x" aria-hidden="true"></i></div>
-	<div class="close mail hidden"><i class="fa fa-envelope-open fa-5x" aria-hidden="true"></i></div>
+	<div class="icons send send-btn"><img src="images/send@2x.png" class="icon"/></div>
+	<div class="icons send sent"><img src="images/send-blue@2x.png" class="icon"/></div>
+	<div class="icons mail open hidden"><img src="images/mail-arrive-y@2x.png" class="icon"/></i></div>
+	<div class="icons mail close hidden"><img src="images/mail-open@2x.png" class="icon"/></i></div>
 
-
-	<div class="note hidden">
+	<div id="note" class="note">
 		<div class="text-area">
 			<h2 class="title">Dear The Charles NYC</h2>
 			<p class="text">Thank you for inviting me to attend the Developer Edition of Birdwatch Flight School. It would have been great to meet the Charles team and find out if we were M.F.E.O. Unfortunately, there are too many states between us, and I won't be able to get myself to your coast by Tuesday.</p>
-			<p class="text">I didn't want to completely miss out on the fun, so I threw this together today. It's not the most responsive (best viewed on standard sized desktop), but I was trying to stay within the 7 hour window. Hope you enjoy!</p>
+			<p class="text">I didn't want to completely miss out on the fun, and when it comes to missed connections in Manhattan, there's nothing quite as inspiring as Tom Hanks and Meg Ryan implausibly falling in love on top of the Empire State Building. So with that, here's my letter to you! I tried my best to stay within the 7 hour window, and it was fun to participate from afar. Thank you, again, for the opportunity.</p>
 			<p class="text">Sincerely,</p>
-			<p class="text">Bummed in Berkeley</p>
+			<p class="text">Based-in-Berkeley</p>
 			<p class="signature">(a.k.a. Taylor Parsell)</p>
 		</div>
 	</div>
 
-
+	<div id="player"></div>
+  <script src="https://www.youtube.com/iframe_api"></script>
 
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
-<!-- 	<script src="https://cdnjs.cloudflare.com/ajax/libs/snap.svg/0.5.1/snap.svg-min.js"></script>
- -->	<script src="app.js"></script>
+	<script src="app.js"></script>
 </body>
 </html>
 	
