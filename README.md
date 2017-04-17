@@ -2,4 +2,4 @@
 
 An audio-visual letter for missed connections. 
 
-### [Click to read](http://taypsl.github.io/taypsl)
+### [Click to read](http://taypsl.github.io/dear-charles)
