@@ -1,3 +1,5 @@
 # Dear Charles, 
 
-A letter for missed connections. 
+An audio-visual letter for missed connections. 
+
+### [Click to read](http://taypsl.github.io/taypsl)
