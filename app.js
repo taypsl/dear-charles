@@ -31,19 +31,21 @@ $(document).ready(function() {
 	});
 
 	$('.send-btn').on('click', function(event) { 
-		$('#plane-path').css({'animation': 'dashScroll 5s linear forwards'});
+		// $('#plane-path').css({'animation': 'dashScroll 5s linear forwards'});
+		$('.dash').addClass('dash-animate');
 		$(this).fadeOut(0);
 		$('.sent').fadeIn(0);
 		setTimeout(function(){
 			$('.open').fadeIn(500);
-		}, 2000); 
+		}, 5250); 
 		sentFired = true;
 	})
 
 	$('.open').on('click', function(event) {
 		$('#note').fadeIn(750);
 		$('.sent').fadeOut(500)
-		$('#flight-path').fadeOut(500);
+		// $('#flight-path').fadeOut(500);
+		$('.dash').removeClass('dash-animate');
 		$('.close').fadeIn(500);
 		$('.open').fadeOut(500);
 		

@@ -297,31 +297,6 @@ div#groupB div{
 	background-size: contain;
 }
 
-/*svg {
-	overflow: scroll;
-}
-.svg-container {
-	position: fixed;
-	width: 100%;
-	z-index: 10;
-}
-
-path {
-	width: 100%;
-	fill: none;
-	stroke: #ffc364;
-	stroke-width: 4px;
-	stroke-dasharray: 1000;
-  	stroke-dashoffset: 1000;
-}
-
-@keyframes dashScroll {
-  to {
-    stroke-dashoffset: 0;
-  }
-  }*/
-
-
 /* FLIGHT PATH */
 .dash-container {
 	position: absolute;
@@ -331,6 +306,7 @@ path {
 
 
 .dash {
+	opacity: 0;
 	width: 1rem;
 	height: 1rem;
 	position: fixed;
@@ -380,17 +356,119 @@ path {
 
 #dashNine {
 	left: 66%;
-	bottom: 32%;
+	bottom: 33%;
 }
 
 #dashTen {
 	left: 72%;
-	bottom: 29%;
+	bottom: 30%;
 }
 
 #dashEleven {
 	left: 78%;
-	bottom: 26%;
+	bottom: 26.5%;
+}
+@-webkit-keyframes dashesAppear { 
+	from { opacity: 0;} 
+	to { opacity:1; } 
+}
+
+@-moz-keyframes dashesAppear {
+	from { opacity: 0; } 
+	to { opacity: 1; } 
+}
+
+@keyframes dashesAppear {
+	from { opacity:0; } 
+	to { opacity:1; } 
+}
+
+.dash-animate {
+	opacity:0;
+	opacity: 1 \9; /*just in case ie*/
+	-webkit-animation: dashesAppear ease-in 1;
+	-moz-animation: dashesAppear ease-in 1;
+	animation: dashesAppear ease-in 1;
+
+	-webkit-animation-fill-mode:forwards;
+	-moz-animation-fill-mode:forwards;
+	animation-fill-mode:forwards;
+
+	-webkit-animation-duration:0s;
+	-moz-animation-duration:0s;
+	animation-duration:0s;
+}
+
+.dash#dashOne {
+	-webkit-animation-delay: 0.5s;
+	-moz-animation-delay: 0.5s;
+	animation-delay: 0.5s;
+}
+
+.dash#dashTwo {
+	-webkit-animation-delay: 1.0s;
+	-moz-animation-delay: 1.0s;
+	animation-delay: 1.0s;
+}
+
+.dash#dashThree {
+	-webkit-animation-delay: 1.5s;
+	-moz-animation-delay: 1.5s;
+	animation-delay: 1.5s;
+}
+
+.dash#dashFour {
+	-webkit-animation-delay: 2.0s;
+	-moz-animation-delay: 2.0s;
+	animation-delay: 2.0s;
+}
+
+.dash#dashFive {
+	-webkit-animation-delay: 2.5s;
+	-moz-animation-delay: 2.5s;
+	animation-delay: 2.5s;
+}
+
+.dash#dashSix {
+	-webkit-animation-delay: 3.0s;
+	-moz-animation-delay: 3.0s;
+	animation-delay: 3.0s;
+}
+
+.dash#dashSeven {
+	-webkit-animation-delay: 3.5s;
+	-moz-animation-delay: 3.5s;
+	animation-delay: 3.5s;
+}
+
+.dash#dashEight {
+	-webkit-animation-delay: 4.0s;
+	-moz-animation-delay: 4.0s;
+	animation-delay: 4.0s;
+}
+
+.dash#dashNine {
+	-webkit-animation-delay: 4.5s;
+	-moz-animation-delay: 4.5s;
+	animation-delay: 4.5s;
+}
+
+.dash#dashTen {
+	-webkit-animation-delay: 5.0s;
+	-moz-animation-delay: 5.0s;
+	animation-delay: 5.0s;
+}
+
+.dash#dashEleven {
+	-webkit-animation-delay: 5.5s;
+	-moz-animation-delay: 5.5s;
+	animation-delay: 5.5s;
+}
+
+.dash#dashTwelve {
+	-webkit-animation-delay: 6.0s;
+	-moz-animation-delay: 6.0s;
+	animation-delay: 6.0s;
 }
 
 /* YOUVE GOT MAIL (ugh rly mixing cinema classics down here) */
@@ -406,8 +484,8 @@ path {
 
 .icons.send {
 	position: fixed;
-	left: 15%;
-	bottom: 20%;
+	left: 16%;
+	bottom: 19%;
 	z-index: 6;
 }
 
@@ -474,7 +552,7 @@ path {
 	background: #184b89;
 }
 
-/* flight path */
+/* svg flight path-- commented out bc need to debug layout issues */
 #flight-path {
 	position: fixed;
 	left: 9.5%;
